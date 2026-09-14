@@ -84,19 +84,14 @@
         align-items: center;
     }
 
-    .profile-placeholder {
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        background: #e9edf3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #777;
-        margin: auto;
-        font-size: 15px;
-        text-align: center;
-    }
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
 
     .hero h1 {
         font-size: 42px;
@@ -304,9 +299,9 @@
 
 ```
     <div>
-        <div class="profile-placeholder">
-            Add your photograph here
-        </div>
+ <img src="./HimanshuGupta_IISc_Photo%20(1).png"
+     alt="Dr. Himanshu Gupta"
+     class="profile-photo">
     </div>
 
     <div>
