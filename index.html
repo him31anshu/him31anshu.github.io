@@ -142,6 +142,43 @@
         margin-bottom: 5px;
     }
 
+    /* Research Highlight */
+    .highlight-content {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        gap: 45px;
+        align-items: center;
+    }
+
+    .highlight-text h3 {
+        font-size: 24px;
+        color: #1557a6;
+        margin-bottom: 15px;
+    }
+
+    .highlight-text p {
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .highlight-video video {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        display: block;
+        margin: auto;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        background: #000;
+    }
+
+    .video-caption {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        margin-top: 10px;
+    }
+
     /* Research */
     .research-grid {
         display: grid;
@@ -263,6 +300,10 @@
             grid-template-columns: 1fr;
         }
 
+        .highlight-content {
+            grid-template-columns: 1fr;
+        }
+
         section {
             padding: 45px 0;
         }
@@ -368,6 +409,54 @@
 </div>
 ```
 
+</section>
+
+<!-- Research Highlight -->
+
+<section id="highlight">
+    <div class="container">
+
+        <h2 class="section-title">Research Highlight</h2>
+
+        <div class="highlight-content">
+
+            <div class="highlight-text">
+
+                <h3>
+                    Elastic Wave Propagation Through Heterogeneous Microstructures
+                </h3>
+
+                <p>
+                    A numerical comparison of elastic wave propagation through
+                    a homogeneous medium and a heterogeneous polycrystalline
+                    volume element (PVE), illustrating the influence of grain
+                    boundaries and microstructural heterogeneity on wave propagation.
+                </p>
+
+                <p>
+                    The heterogeneous microstructure introduces scattering at
+                    grain boundaries, producing characteristic variations in
+                    the propagating wave field compared with the homogeneous case.
+                </p>
+
+            </div>
+
+            <div class="highlight-video">
+
+                <video autoplay muted loop playsinline controls>
+                    <source src="./Homogeneous%20vs%20PVE%20wave%20prop.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+
+                <p class="video-caption">
+                    Elastic wave propagation through homogeneous and heterogeneous
+                    polycrystalline media, illustrating grain-boundary scattering.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <!-- Research -->
